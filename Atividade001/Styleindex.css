@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(164, 164, 94);
+    background-color: rgb(81, 176, 94);
 }
 #botao1, #botao2, #botao3{
     background-color: rgb(18, 46, 147);
@@ -17,6 +17,8 @@ body{
 #primeirainfo{
     display:flex;
     justify-content: space-evenly;
+    gap: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 h1{
@@ -34,6 +36,7 @@ h1{
 #infoprinci{
     display:flex; 
     justify-content: center;
+    gap: 10px;
 }
 
 footer{
@@ -47,8 +50,9 @@ footer{
     max-width:250px;
     height: auto;
     border-radius: 20px;
-    
-
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 5px rgb(112, 111, 111);
+    border: solid 2px rgb(99, 98, 98);
 }
 
 #menu{
@@ -73,6 +77,80 @@ a{
     padding-right: 5%;
 }
 
+#servicos{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-direction: center;
+    padding-bottom: 20px;
+    #elemento1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-radius: 25px;
+        background-color: bisque;
+        border: solid 2px black;
+        width: 250px;
+        padding-bottom: 20px;
+        text-align: center;
+        align-items: center;
+        #iconeLupa{
+            max-width: 100%;
+            width: 40px;
+            height: auto;
+            align-items: center;
+        }
+    }
+    #elemento2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: solid 2px rgb(5, 5, 5);
+        border-radius: 20px;
+        width: 250px;
+        background-color: bisque;
+        align-items: center;
+        text-align: center;
+        #iconeProfessor{
+            max-width: 100%;
+            width: 40px;
+            height: auto;
+            padding-top: 12px;
+        }
+    }
+    #elemento3{
+        display: flex;
+        flex-direction: column;
+        border-radius: 25px;
+        background-color: bisque;
+        border: solid 2px black;
+        width: 250px;
+        padding-top: 45px;
+        align-items: center;
+        padding-bottom: 10px;
+        gap: 10px;
+        #livro{
+            border-radius: 25px;
+            background-color: darkblue;
+            color: rgba(237, 237, 237, 0.964);
+            height: 60px;
+            width: 90px;
+
+        }
+        #livro:hover{
+            background-color: rgb(103, 103, 179);
+            height: 65px;
+            width: 95px;
+        }
+        #iconeLivro{
+            max-width: 100%;
+            width: 40px;
+            height: auto;
+        }
+    }
+}
+
+
 @media screen and (max-width:768px) {
     h1{
         font-size: large;
@@ -86,9 +164,7 @@ a{
        justify-content: center;
         #clarinete{
             order: 2;
-            padding-left: 29%;
-            padding-right: 15%;
-            padding-bottom: 20px;
+            align-self: center;
         }
         #explicativo{
             order: 1;
@@ -100,6 +176,9 @@ a{
         font-size: medium;
     }
     }
+    #primeirainfo{
+        font-size: small;
+    }
 }
 
 #textoMenu{
@@ -108,4 +187,62 @@ a{
     padding-left: 10px;
     padding-right: 10px;
 
+}
+#sessaoVendas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 15px;
+    background-color: rgb(167, 167, 157);
+    padding-bottom: 10px;
+    max-width: auto;
+    #linkVenda{
+        background-color: rgb(48, 59, 100);
+        color:rgb(250, 242, 221);
+        border-radius: 25px;
+        max-height: 60px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 10px;
+    }
+    #linkVenda:hover{
+        background-color: rgb(57, 168, 205);
+        color: gold;
+        border-radius: 25px;
+        size: 70%;
+    }
+}
+#localizacao{  
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    column-gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    #endereco{
+        font-size: large;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    #mapa{
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        border-radius: 20px;
+        border: solid 2px black;
+        margin-top: 10px;
+    }
+    #local{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;    
+        background-color: rgb(217, 217, 212);
+        padding: 10px;  
+    }
+
+   
 }
